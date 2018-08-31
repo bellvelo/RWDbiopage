@@ -13,10 +13,11 @@
     padding: 15px;
 }
 
-/* For mobile phones: */
+
 [class*="col-"] {
     width: 100%;
 }
+/* For mobile phones: */
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -32,8 +33,8 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
+/* For desktop: */
+@media only screen and (min-width: 768px) { 
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -49,6 +50,7 @@
 }
 
 /* RWD SECTION */ 
+
   
 .Home {
     width: 100%;
@@ -58,8 +60,7 @@
     text-align: center;
     padding: 35px;
     color: white;
-
-
+    margin: 2% 0 2% 0;
 }    
 
 /* NAVBAR */
@@ -107,18 +108,38 @@ h3 {
     font-family: Abel, sans-serif;
 }
 
+h4 {
+    font-size: 20px;
+    font-family: Orbitron, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h5 {
+    font-size: 18px;
+    font-family: Abel, sans-serif;
+     
+}
+
 p {
     font-size: 16px;
     font-family: Abel, sans-serif;
+    text-align: justify;
 }
 
-#small-header {
-    font-size: 20px;
-}
 
 /* LEFT-RIGHT COLUMNS*/ 
 
 .left-col {
+    background-color: rgba(59, 71, 78, 0.185);
+    color: darkslategray;
+    text-align: center;
+    padding: 0 10px 20px 10px;
+    margin: 30px 0;
+    border: 2px solid darkslategray;
+}
+
+.left-col2 {
     background-color: rgba(59, 71, 78, 0.185);
     color: darkslategray;
     text-align: center;
@@ -127,27 +148,54 @@ p {
     border: 2px solid darkslategray;
 }
 
+
 .right-col {
     background-color: lightsteelblue;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     color: white;
     overflow-wrap: break-word;
     border: 2px solid darkslategray;
 }
 
 .Strava {
-    
     align-content: center;
     padding: 5px;
 
 }
 /* MIDDLE SECTION */
 
+.photo-button {
+    background-color: rgb(38, 76, 126); 
+    border: 1px solid darkslategray;
+    padding: 0px;
+    display: inline-block;
+    margin: 0 0 0px 0;
+    cursor: pointer;
+    width: 100%;
+}    
+
+.photo-button a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Abel, sans-serif;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+.photo-button:hover {
+    background-image: url("https://images.pexels.com/photos/313559/pexels-photo-313559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+    background-size: cover;
+    /*background-color: rgba(59, 71, 78, 0.411); */
+    top: 3px;
+}
 
 .what-about-me {
     border: 1px solid darkslategray;
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
     text-align: center;
     text-justify: auto;
     padding: 5px;
@@ -156,11 +204,12 @@ p {
     font-family: Abel, sans-serif;
     font-weight: bold;
 }
+
 .Career {
     border: 1px solid darkslategray;
     margin: 0 0 10px 0;
     text-align: center;
-    text-justify: auto;
+    
     padding: 15px;
     color: rgb(11, 137, 187)
 }
@@ -169,7 +218,7 @@ p {
     border: 1px solid darkslategray;
     margin: 10px 0 10px 0;
     text-align: center;
-    text-justify: auto;
+    
     padding: 15px;
     color: rgb(11, 137, 187)
 }
@@ -178,20 +227,21 @@ p {
     border: 1px solid darkslategray;
     margin: 10px 0 10px 0;
     text-align: center;
-    text-justify: auto;
+    
     padding: 15px;
     color: rgb(11, 137, 187)
 }    
 
 .MusicVids {
     border: 1px solid darkslategray;
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
     text-align: center;
-    text-justify: auto;
-    background-color: rgba(59, 71, 78, 0.411);
+    padding: 0px;
+    background-image: url("https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+    background-size: cover;
+    /* background-color: rgba(59, 71, 78, 0.411); */
     color: white;
-    font-family: Abel, sans-serif;
-    font-weight: bold;
+    
 }
 
 /*.vids {
@@ -203,12 +253,127 @@ p {
 .backtotop {
     text-align: center;
     font-weight: bold;
-}
+} 
+
 .footer {
     width: 100%;
     background-color:rgb(243, 159, 33);
     text-align: center;
     padding: 2px;
-    border: 1px solid rgb(245, 149, 4);
+    border: 1px solid darkslategray;
+    color: white;
+    margin: 2% 0 2% 0;
+}
+
+/* ###############################  PAGE 2  #################################### */
+
+/* Background image section */
+
+body, html {
+    height: fit-content;
+    margin: 0 2% 0 2%;
+    
+}
+    
+.background-image {
+    background-image: url("https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;  
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.Home2 {
+    background-image: url("https://images.pexels.com/photos/358118/pexels-photo-358118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+    background-size: cover;
+    width: 100%;
+    height: auto; /* to ensure text does not bleed out of container*/
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(77, 114, 170, 0.397);
+    border: 1px solid darkslategray;
+    color: white;
+    margin: 2% 0 2% 0;
+    
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 32%;
+    grid-template-rows: 300px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkslategray;
+    padding: 2%;
+}
+
+.flex-container > div {
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    margin: 5px
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  /*code to ensure img resizes to cover entire container */
+    border: 5px solid darkslategray;
+
+}
+#front-images {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /*code to ensure img resizes to cover entire container */
+    border: 1px solid darkslategray;
+
+}
+
+#strava {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /*code to ensure img resizes to cover entire container */
+    border: 1px solid darkslategray;
+
+}
+.home-page-button {
+    background-color: rgb(38, 76, 126); 
+    height: auto;
+    padding: 0%;
+    display: inline-block;
+    margin: 0 0 2% 0;
+    cursor: pointer;
+    width: 100%;
+}    
+
+.home-page-button a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Abel, sans-serif;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+.home-page-button:hover {
+    background-image: url("https://images.pexels.com/photos/221047/pexels-photo-221047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+    background-size: cover;
+    
+    top: 3px;
+}
+   
+.footer2 {
+    width: 100%;
+    background-color:rgb(243, 159, 33);
+    text-align: center;
+    margin: 2% 0 2% 0;
+    border: 1px solid darkslategray;
     color: white;
 }
